@@ -1,0 +1,64 @@
+.order-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.order-form h2 {
+    text-align: center;
+}
+.order-form form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.order-form form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: .3s; /* свойство для плавности переходов*/
+    outline: none;
+}
+.order-form form section {
+    padding-top: 15px;
+}
+.order-form form section button {
+    padding: 10px 15px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 1s;
+}
+.order-form form section button:hover {
+    background: #218838;
+}
+.order-form form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/*validation styles*/
+.order-form form input.error {
+    border-color: red;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    height: 0;
+    opacity: 0;
+    transition: .3s;
+}
+.error-message.active {
+   opacity: 1;
+   height: auto; 
+}
+.order-form input.valid {
+    border-color: rgba(40,212,143,1);
+    box-shadow: 0px 0px 19px -3px rgba(40,212,143,1);
+}

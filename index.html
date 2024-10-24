@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form JS</title>
+</head>
+<body>
+
+    <section class="order-form">
+        <h2>Order form</h2>
+        <form>
+            <!-- <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter phone">
+            <label for="address">Adress:</label>
+            <input type="text" id="address" placeholder="Enter adress"> -->
+            
+            <label>
+                Имя:
+                <input type="text" id="name" placeholder="Введите ваше имя">
+                <span class="error-message" id="nameError"></span>
+            </label>
+            <label>
+                Телефон:
+                <input type="number" id="phone" placeholder="Введите ваш номер телефона">
+                <span class="error-message" id="phoneError"></span>
+            </label>
+            <label>
+                Адрес доставки:
+                <input type="text" id="address" placeholder="Введите адрес доставки">
+                <span class="error-message" id="addressError"></span>
+            </label>
+
+            <section>
+                <button>Order submit</button>
+            </section>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
